@@ -1,0 +1,42 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplication13;
+import java.util.Scanner;
+
+public class SumaElementos {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[] numeros = new int[5];
+        int suma = 0;
+
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Ingrese el número " + (i + 1) + ": ");
+            numeros[i] = scanner.nextInt();
+        }
+
+        for (int i = 0; i < 5; i++) {
+            suma += numeros[i];
+        }
+
+        System.out.println("La suma de todos los elementos es: " + suma);
+
+        scanner.close();
+    }
+}
+
+/**
+ *
+ * @author compu
+ */
+public class JavaApplication13 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
+    
+}
