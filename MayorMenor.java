@@ -11,17 +11,14 @@ public class MayorMenor {
         int[] numeros = new int[8];
         int mayor, menor;
 
-        // Leer 8 números desde el teclado y almacenarlos en el array
         for (int i = 0; i < 8; i++) {
             System.out.print("Ingrese el número " + (i + 1) + ": ");
             numeros[i] = scanner.nextInt();
         }
 
-        // Inicializar mayor y menor con el primer elemento del array
         mayor = numeros[0];
         menor = numeros[0];
 
-        // Determinar el número mayor y menor
         for (int i = 1; i < 8; i++) {
             if (numeros[i] > mayor) {
                 mayor = numeros[i];
@@ -31,7 +28,6 @@ public class MayorMenor {
             }
         }
 
-        // Mostrar el número mayor y menor en la consola
         System.out.println("El número mayor es: " + mayor);
         System.out.println("El número menor es: " + menor);
 
